@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #121212;
+    /* Fundo escuro para combinar com tema de adega */
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    padding: 2rem 1.5rem;
+    color: #e0e0e0;
+}
+
+.catalog-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #1e1e1e;
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.aviso-maioridade {
+    background: #c0392b;
+    /* Vermelho alerta */
+    color: white;
+    text-align: center;
+    padding: 0.8rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.header {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    /* Fundo preto/escuro elegante */
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    color: #f1c40f;
+    /* Dourado/Amarelo bebida */
+}
+
+.subtitulo {
+    font-size: 1rem;
+    opacity: 0.9;
+    color: #cccccc;
+}
+
+.tech-info {
+    background: rgba(241, 196, 15, 0.15);
+    /* Fundo levemente dourado */
+    border: 1px solid rgba(241, 196, 15, 0.3);
+    color: #f1c40f;
+    backdrop-filter: blur(4px);
+    border-radius: 50px;
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    margin-top: 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.contato-bar {
+    background: #2a2a2a;
+    /* Fundo escuro neutro */
+    padding: 0.8rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-bottom: 1px solid #333;
+    font-weight: 500;
+}
+
+.contato-bar span {
+    background: #111;
+    color: #f1c40f;
+    border: 1px solid #333;
+    padding: 0.3rem 1.2rem;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contato-bar span:first-child {
+    background: #f1c40f;
+    /* Dourado para o telefone */
+    color: #000;
+    border: none;
+    font-weight: bold;
+}
+
+.contato-bar small {
+    color: #aaaaaa;
+    font-size: 0.8rem;
+}
+
+.section {
+    padding: 1.5rem 2rem 2rem 2rem;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.section:last-of-type {
+    border-bottom: none;
+}
+
+.section-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    padding-left: 0.8rem;
+    border-left: 5px solid #f1c40f;
+    /* Detalhe dourado na categoria */
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.service-card {
+    background: #242424;
+    /* Card escuro */
+    border-radius: 1.2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s;
+    border: 1px solid #333;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(241, 196, 15, 0.1);
+    /* Brilho dourado suave no hover */
+    border-color: #555;
+}
+
+.card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #333;
+    background-color: #1a1a1a;
+}
+
+.card-content {
+    padding: 1.3rem 1.2rem 1rem 1.2rem;
+    flex: 1;
+}
+
+.service-name {
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.service-price {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #2ecc71;
+    /* Verde forte para o preço destacando dinheiro */
+    margin: 0.5rem 0 0.8rem 0;
+}
+
+.btn-wa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.7rem 0.5rem;
+    margin: 0.8rem 1.2rem 1.3rem 1.2rem;
+    border-radius: 60px;
+    transition: 0.2s;
+    font-size: 0.9rem;
+}
+
+.btn-wa:hover {
+    background: #128C7E;
+    transform: scale(0.98);
+}
+
+.badge-fixo {
+    font-size: 0.7rem;
+    background: rgba(241, 196, 15, 0.2);
+    color: #f1c40f;
+    border-radius: 20px;
+    padding: 0.2rem 0.7rem;
+    display: inline-block;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+footer {
+    background: #111;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #777;
+    border-top: 1px solid #222;
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 0;
+        background: #1e1e1e;
+    }
+
+    .catalog-container {
+        border-radius: 0;
+    }
+
+    .section {
+        padding: 1rem 1rem 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .contato-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
